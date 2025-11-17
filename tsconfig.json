@@ -1,0 +1,14 @@
+{
+ "compilerOptions": {
+    "target": "ES6",// JS version to compile to
+    "module": "commonjs",// Module system
+    "strict":true,//enable all strict type-checking options msln eza ken string mmnuu baaden staamlo ka number
+    "types":["node","jest"],//understand all the Node-specific things like fs, path, process, etc.
+    "baseUrl": "./src",//when importing, start from src folder
+    "outDir": "./build",//where js files will be compiled to
+    "sourceMap": true,//Let us debug using original TypeScript code instead of messy compiled JS
+    "esModuleInterop": true// make it easier to import commonjs modules
+},
+"include": ["src/**/*.ts"],//the files to be compiled and transpiled
+"exclude": ["node modules"]//Tells TypeScript which folders/files not to compile
+}
